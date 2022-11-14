@@ -35,6 +35,7 @@
         "gridwidth",
         "isin",
         "linecolor",
+        "metatables",
         "perc",
         "piechart",
         "readstat",
@@ -57,6 +58,6 @@
         "yref",
         "zeroline",
         "zerolinecolor",
-        "zerolinewidth",
+        "zerolinewidth"
     ],
 }

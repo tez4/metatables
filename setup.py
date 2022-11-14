@@ -27,6 +27,7 @@ setup(
         "dev": [
             "pytest >= 3.7",
             "check-manifest",
+            "twine",
         ]
     },
     keywords=['python'],
