@@ -31,7 +31,7 @@ x.select_columns(['F5_01', 'F5_02'])
 x.show('F5_01')
 
 # write to .sav file
-x.write_sav('./data/fertig_test.sav')
+x.write_sav('./filename.sav')
 ```
 
 ## Developing

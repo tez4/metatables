@@ -125,6 +125,14 @@ class MetaTable:
             variable_measure=self.meta.variable_measure,
         )
 
+    def return_components(self) -> tuple[pd.DataFrame, pyreadstat._readstat_parser.metadata_container]:
+        """Returns the updated DataFrame and metadata that are contained within the object
+
+        Returns:
+            tuple[pd.DataFrame, pyreadstat._readstat_parser.metadata_container]: returns tuple with objects
+        """
+        return self.df, self.meta
+
 
 if __name__ == '__main__':
     df1, meta1 = pyreadstat.read_sav('./data/fertig_R.sav')
@@ -141,4 +149,7 @@ if __name__ == '__main__':
 
     x.select_columns(['F5_01', 'F5_02', 'F5_03', 'F5_04'])
     x.show('F5_01')
+
+    df, meta = x.return_components()
+
     x.write_sav('./data/fertig_test.sav')
