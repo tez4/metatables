@@ -1,6 +1,7 @@
 import re
 import pyreadstat
 import pandas as pd
+from typing import Union
 
 
 class MetaTable:
@@ -50,12 +51,12 @@ class MetaTable:
         self.meta.number_columns = len(columns)
         self.df = self.df[columns]
 
-    def val_lab(self, columns: list[str], labels: dict[int, str] | str):
+    def val_lab(self, columns: list[str], labels: Union[dict[int, str], str]):
         """Changes the value labels of the given columns
 
         Args:
             columns (list[str]): A list of columns that need new value labels
-            labels (dict[int, str] | str): A dictionary with new labels \
+            labels (Union[dict[int, str], str]): A dictionary with new labels \
 {1 : "label for code 1", 2: "label for code 2"} or the variable name with the labels to be used "variable_name"
         """
         # my_indexes = [i for i, v in enumerate(self.meta.column_names) if v in columns]
