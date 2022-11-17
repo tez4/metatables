@@ -39,6 +39,10 @@ x.show('F5_01')
 x.write_sav('./filename.sav')
 ```
 
+## Documentation
+
+The official documentation is hosted on GitHub Pages: https://tez4.github.io/metatables/
+
 ## Developing
 
 To install the package, along with the tools you need to develop and run tests, run the following in your virtualenv:
