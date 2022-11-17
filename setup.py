@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.11'
+VERSION = '0.0.12'
 DESCRIPTION = 'Data wrangling on files read with pyreadstat'
 
 with open("README.md", "r") as fh:
@@ -17,7 +17,6 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
-    url="https://github.com/tez4/metatables",
     packages=find_packages(),
     install_requires=[
         "pyreadstat >= 1.1",
@@ -29,7 +28,8 @@ setup(
             "check-manifest",
             "twine",
             "sphinx",
-            "sphinx-rtd-theme"
+            "sphinx-rtd-theme",
+            "pdoc3"
         ]
     },
     keywords=['python'],
@@ -39,5 +39,9 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: Apache Software License"
-    ]
+    ],
+    project_urls={
+        'Repository': 'https://github.com/tez4/metatables',
+        'Documentation': 'https://tez4.github.io/metatables/'
+    }
 )

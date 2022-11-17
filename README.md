@@ -47,6 +47,12 @@ To install the package, along with the tools you need to develop and run tests, 
 pip install -e .[dev]
 ```
 
+Add documentation:
+
+``` bash
+pdoc --html --output-dir docs metatables
+```
+
 Create the package files:
 
 ``` bash
