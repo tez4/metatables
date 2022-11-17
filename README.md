@@ -2,6 +2,11 @@
 
 This is a repository that enables easy data wrangling on files read with the pyreadstat package.
 
+[![PyPI Latest Release](https://img.shields.io/pypi/v/metatables.svg)](https://pypi.org/project/metatables/)
+[![Package Status](https://img.shields.io/pypi/status/metatables.svg)](https://pypi.org/project/metatables/)
+[![License](https://img.shields.io/pypi/l/metatables.svg)](https://github.com/tez4/metatables/blob/main/LICENSE)
+[![Downloads](https://pepy.tech/badge/metatables/month)](https://pepy.tech/project/metatables)
+
 ## Installation
 
 Run the following to install:

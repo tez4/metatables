@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.9'
+VERSION = '0.0.11'
 DESCRIPTION = 'Data wrangling on files read with pyreadstat'
 
 with open("README.md", "r") as fh:
@@ -36,5 +36,6 @@ setup(
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
+        "License :: OSI Approved :: Apache Software License"
     ]
 )
