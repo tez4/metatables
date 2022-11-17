@@ -28,6 +28,8 @@ setup(
             "pytest >= 3.7",
             "check-manifest",
             "twine",
+            "sphinx",
+            "sphinx-rtd-theme"
         ]
     },
     keywords=['python'],
