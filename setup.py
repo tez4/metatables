@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.12'
+VERSION = '0.0.13'
 DESCRIPTION = 'Data wrangling on files read with pyreadstat'
 
 with open("README.md", "r") as fh:

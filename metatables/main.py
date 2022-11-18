@@ -103,7 +103,7 @@ class MetaTable:
         print(self.meta.column_names_to_labels[variable])
 
         print('')
-        value_labels = self.meta.variable_value_labels['F5_01']
+        value_labels = self.meta.variable_value_labels[variable]
         for key, value in value_labels.items():
             print(f'{key: >12}   {value}')
 
@@ -144,6 +144,7 @@ if __name__ == '__main__':
     x = MetaTable(df1, meta1)
 
     x.val_lab(['F5_03', 'F5_04'], 'F1_01')
+    x.show('F5_03')
 
     x.val_lab(['F5_01', 'F5_02'], {1: 'Fish', 2: 'Chips'})
     x.var_lab(['F5_01', 'F5_02'], 'New Label')
