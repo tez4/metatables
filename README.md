@@ -54,7 +54,7 @@ pip install -e .[dev]
 Add documentation:
 
 ``` bash
-pdoc --html --output-dir docs metatables
+pdoc --html --output-dir docs metatables --config show_source_code=False -f
 ```
 
 Create the package files:
