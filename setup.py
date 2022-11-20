@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.13'
+VERSION = '0.0.14'
 DESCRIPTION = 'Data wrangling on files read with pyreadstat'
 
 with open("README.md", "r") as fh:
@@ -27,9 +27,9 @@ setup(
             "pytest >= 3.7",
             "check-manifest",
             "twine",
-            "sphinx",
-            "sphinx-rtd-theme",
-            "pdoc3"
+            "pdoc3",
+            "flake8",
+            "autopep8"
         ]
     },
     keywords=['python'],
